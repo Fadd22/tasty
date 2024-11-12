@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif !important;
+    overflow-x: hidden;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+.ms-auto {
+    margin-right: -80px;
+}
+
+.background-image-other {
+    background-size: 100%;
+    background-image: url("/assets1/ASET/Group 70@2x.png");
+    background-position: top center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    /* Mengubah warna tautan menjadi putih */
+    margin-right: 0.7rem;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: -20px;
+    text-decoration: none;
+    /* Menghapus garis bawah */
+    color: white;
+    /* Warna normal */
+    transition: color 0.3s ease;
+    /* Menambahkan transisi untuk perubahan warna */
+}
+
+.navbar .navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #ccc;
+    /* Pastikan hover tetap berwarna putih */
+    transition: color 0.3s ease;
+    /* Menambahkan transisi untuk perubahan warna */
+}
+
+.thick {
+    font-size: 3.1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    /* Adjust text color as needed */
+    position: relative;
+    margin-top: -350px;
+    /* Adjust to position it vertically */
+    margin-left: 275px;
+    transform: translate(-50%, -50%);
+    /* Center the text */
+    z-index: 2;
+    /* Ensure the text is above the background */
+}
+
+.content-about {
+    font-size: 3.1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    /* Adjust text color as needed */
+    position: relative;
+    margin-top: -350px;
+    /* Adjust to position it vertically */
+    margin-left: 300px;
+    transform: translate(-50%, -50%);
+    /* Center the text */
+    z-index: 2;
+    /* Ensure the text is above the background */
+}

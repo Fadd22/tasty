@@ -1,0 +1,761 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    will-change: transform;
+    /* Memberi tahu browser untuk mengoptimasi elemen ini */
+    transform: translateZ(0);
+    /* Memanfaatkan hardware acceleration */
+}
+
+/* General Section Styles */
+.slider {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    margin: -60px 0 -200px 0;
+}
+
+.content {
+    max-width: 1130px;
+    margin: 280px auto;
+    border-radius: 30px;
+}
+
+
+
+/* Carousel */
+.carousel-item img {
+    width: 100%;
+    max-height: 450px;
+    border-radius: 30px;
+    object-fit: cover;
+    margin: 0 20px 20px 0;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-control-prev {
+    left: -90px;
+}
+
+.carousel-control-next {
+    right: -90px;
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Fully opaque controls */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Galleri */
+.photo {
+    background-color: white;
+    padding-top: 35px;
+    padding-bottom: 90px;
+    /* margin-bottom: -150px; */
+}
+
+.container-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 90px;
+    padding: 0px 80px;
+}
+
+.rounded-img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 270px;
+    height: 270px;
+    object-fit: cover;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.rounded-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* Tasty Food Section */
+
+.tastyFood {
+    background-color: #f4f4f4;
+    padding: 50px 0 50px;
+    /* Ubah padding bawah menjadi lebih kecil */
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    /* Atur arah elemen menjadi kolom */
+    align-items: center;
+    /* Center elemen di dalam */
+}
+
+.visi {
+    background-color: white;
+    padding: 100px 0;
+    /* Menambahkan ruang di atas dan bawah */
+    min-height: 400px;
+    /* Atur tinggi minimum untuk elemen */
+}
+
+.misi {
+    background-color: white;
+    padding: 100px 0;
+    /* Menambahkan ruang di atas dan bawah */
+    min-height: 400px;
+    /* Atur tinggi minimum untuk elemen */
+}
+
+.tasty-food-section {
+    display: flex;
+    max-width: 1100px;
+    margin: 250px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    max-width: 600px;
+    margin-left: 0;
+    /* Menghilangkan margin negatif */
+    padding-right: 20px;
+    /* Memberikan sedikit ruang antara teks dan gambar */
+}
+
+.text-content h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.text-content-tasty h3 {
+    font-size: 1.5rem;
+}
+
+.text-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.image-content {
+    display: flex;
+    gap: 5px;
+    margin-right: 0;
+    /* Menghilangkan margin negatif */
+    overflow: hidden;
+}
+
+.image-content img {
+    width: 250px;
+    height: 350px;
+    border-radius: 17px;
+    object-fit: cover;
+}
+
+.rounded-image,
+.rounded-image1,
+.rounded-image-misi {
+    border-radius: 18px;
+    /* Konsisten di semua gambar */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    /* Pastikan gambar tetap sesuai proporsi */
+}
+
+.rounded-image1 {
+    width: 250px;
+    /* Atur lebar kotak */
+    height: 250px;
+    /* Atur tinggi kotak */
+    object-fit: cover;
+    /* Pastikan gambar terpotong proporsional */
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 10px;
+    /* Jarak antar gambar */
+}
+
+.rounded-image-misi {
+    width: 600px;
+    /* Lebar lebih besar */
+    height: 250px;
+    /* Tinggi lebih kecil */
+    object-fit: cover;
+    /* Pastikan gambar tetap proporsional */
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 10px;
+    /* Jarak antar gambar */
+    border-radius: 15px;
+    /* Opsional: Untuk memberikan efek sudut melengkung */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .tasty-food-section {
+        flex-direction: column;
+        /* Teks dan gambar akan tersusun vertikal pada layar kecil */
+        margin: 100px auto;
+    }
+
+    .text-content {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .image-content {
+        justify-content: center;
+    }
+
+    .image-content img {
+        width: 200px;
+        height: 300px;
+        border-radius: 30px;
+    }
+}
+
+/* news */
+
+.row-news {
+    display: flex;
+    /* Menggunakan flexbox untuk satu baris */
+    align-items: center;
+    /* Vertikal center pada elemen */
+}
+
+.text-content-news {
+    padding-left: 10px;
+    padding-right: 37px;
+    color: black;
+    letter-spacing: 0.05rem;
+}
+
+.text-content-news h3 {
+    font-size: 1.7rem;
+}
+
+.text-content-news p {
+    font-size: 0.8rem;
+    color: #000000;
+    font-weight: 500;
+    margin-right: -40px;
+    line-height: 1.5;
+}
+
+.news-content {
+    background-color: #f4f4f4;
+    padding: 130px 0 150px;
+    /* Increased bottom padding to 100px */
+    margin-top: 140px;
+    /* Keep margin top as is */
+}
+
+.rounded-image-news {
+    width: 100%;
+    /* Lebar lebih besar */
+    height: 500px;
+    /* Tinggi lebih kecil */
+    object-fit: cover;
+    /* Pastikan gambar tetap proporsional */
+    overflow: hidden;
+    justify-content: center;
+    margin: -30px -15px;
+    /* Jarak antar gambar */
+    border-radius: 15px;
+    /* Opsional: Untuk memberikan efek sudut melengkung */
+}
+
+.btn-black {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    /* Bold text */
+    color: white;
+    /* Teks berwarna putih */
+    background-color: black;
+    /* Warna latar belakang tombol hitam */
+    border: none;
+    /* Menghapus border default */
+    text-align: center;
+    text-decoration: none;
+    /* Menghapus garis bawah */
+    cursor: pointer;
+    /* Menampilkan pointer saat hover */
+    transition: background-color 0.3s ease;
+    /* Efek transisi saat hover */
+    width: 300px;
+    /* Lebar tombol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-black:hover {
+    background-color: #333;
+    /* Warna latar belakang saat hover */
+}
+
+@media (max-width: 768px) {
+    .news-content {
+        text-align: center;
+    }
+}
+
+/* news-other */
+
+.news-other {
+    margin: 70px -15px;
+}
+
+.berita-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    overflow: hidden;
+    /* Agar elemen anak tidak keluar dari card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sedikit bayangan untuk tampilan 3D */
+    min-height: 380px;
+    min-width: 280px;
+    margin: -18px -15px;
+}
+
+.berita-card img {
+    width: 100%;
+    /* Lebar gambar akan otomatis menyesuaikan ukuran card */
+    height: 175px;
+    /* Tentukan tinggi yang diinginkan */
+    object-fit: cover;
+    /* Gambar akan menutupi area yang ada tanpa terpotong */
+    border-top-left-radius: 18px;
+    /* Menyelaraskan radius sudut gambar dengan card */
+    border-top-right-radius: 18px;
+}
+
+.card-body {
+    flex-grow: 1;
+    flex-direction: column;
+    /* Mengatur agar konten diatur secara vertikal */
+    justify-content: space-between;
+    /* Memisahkan title dan text dari read more */
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000000;
+    /* Warna teks yang lebih lembut */
+    margin-bottom: 15px;
+    margin-right: 30px;
+    margin-top: auto;
+}
+
+.read-more {
+    max-width: max-content;
+    /* Lebar elemen sesuai dengan panjang teks */
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #ff9d00;
+    position: relative;
+    display: inline-block;
+    /* Pastikan hanya sepanjang teks */
+    transition: color 0.3s;
+    margin-top: auto;
+    padding-bottom: 2px;
+    /* Sedikit jarak di bawah teks */
+    width: auto;
+    white-space: nowrap;
+}
+
+/* Pseudo-element for the underline */
+.read-more::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* Garis di bawah teks */
+    width: 0;
+    /* Lebar garis dimulai dari 0 */
+    height: 2px;
+    background-color: #ff9d00;
+    /* Warna garis */
+    transition: width 0.3s ease;
+}
+
+/* Hover effect to animate the underline */
+.read-more:hover::after {
+    width: 100%;
+    /* Garis hanya akan selebar teks */
+}
+
+.read-more:hover {
+    color: #ff9d00;
+    /* Warna teks tetap */
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .berita-card img {
+        height: auto;
+        /* Gambar akan menyesuaikan tinggi yang lebih kecil pada perangkat mobile */
+    }
+}
+
+/* contact */
+
+/* Contact Section */
+.contact-container {
+    text-align: center;
+    margin-top: 170px;
+    padding: 50px 100px;
+}
+
+.contact-container h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Layout */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    /* Increase the max-width to make the layout larger */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* Ensure responsive behavior */
+    position: relative;
+}
+
+
+.left-column,
+.right-column {
+    flex: 1;
+    padding: 5px;
+}
+
+/* Arrange left-column items vertically */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 50%;
+    /* Ensure it stays on the left side */
+}
+
+/* Right column for the message textarea */
+.right-column {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50%;
+    /* Occupies space on the right */
+}
+
+/* Form Inputs */
+.input-field {
+    width: 100%;
+    padding: 33px;
+    border: 2px solid #a5a5a5;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.textarea-field {
+    height: 300px;
+    width: 100%;
+    /* Ensure textarea takes full width of the right column */
+}
+
+/* Button at the bottom */
+.form-group:last-child {
+    display: flex;
+    /* Enables flexbox for alignment */
+    justify-content: center;
+    /* Center the button horizontally */
+    width: 100%;
+    /* Full width of the form group */
+}
+
+.action-button {
+    background-color: #000;
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 30px 40px;
+    /* Padding for height and width */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer on hover */
+    margin-top: 20px;
+    /* Space above the button */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+    width: 100%;
+    /* Make button as wide as the form */
+    max-width: 6000px;
+    /* Optional: Limit max width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+}
+
+.action-button:hover {
+    background-color: #333;
+    /* Darker background on hover */
+}
+
+
+
+
+/* Contact Info Section */
+.info-section {
+    display: flex;
+    justify-content: center;
+    /* Center the info cards horizontally */
+    padding: 40px;
+}
+
+.body-contact {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    margin: 0;
+    background-color: #fff;
+}
+
+.kontak-info {
+    justify-content: space-around;
+    display: flex;
+    width: 80%;
+
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-info .icon {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    height: 80px;
+    width: 80px;
+}
+
+.contact-info h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-layout {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        /* Full width for both columns on small screens */
+    }
+
+    .right-column {
+        justify-content: center;
+    }
+
+    .textarea-field {
+        width: 100%;
+        /* Ensure textarea stays full width on smaller screens */
+    }
+
+    .action-button {
+        width: 100%;
+        /* Full-width button on small screens */
+    }
+}
+/* Maps */
+.map {
+    margin-top: 100px;
+    margin-bottom: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    height: 550px;
+    width: 1200px;
+    max-width: 100%;
+    /* Membatasi lebar peta maksimal 100% dari layar */
+    max-height: 100vh;
+    /* Membatasi tinggi peta maksimal 100% dari tinggi viewport */
+}
+
+/* Responsivitas agar ukuran peta tetap proporsional di layar kecil */
+@media (max-width: 1200px) {
+    #map {
+        width: 90%;
+        /* Lebar peta di layar kecil */
+        height: 400px;
+        /* Tinggi yang tetap proporsional */
+    }
+}
+
+/* Responsivitas untuk layar yang lebih kecil lagi */
+@media (max-width: 768px) {
+    #map {
+        width: 100%;
+        /* Lebar penuh untuk layar sangat kecil */
+        height: 300px;
+        /* Lebih kecil lagi untuk layar yang sangat sempit */
+    }
+}
+
+/* Footer */
+.footer {
+    padding: 5rem;
+    margin: 150px 0 0 0;
+    background-color: #000000;
+    color: #f4f4f4;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #b5b5b5;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 8px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #3b5998;
+}
+
+.social-icons a.twitter {
+    background-color: #1da1f2;
+}
+
+.social-icons a i {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+/* Contact Info */
+.contact-info li,
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: small;
+}
+
+.contact-info li i {
+    margin-right: 8px;
+}
+
+/* Button and Other Styles */
+.botten {
+    display: grid;
+    place-items: center;
+    padding-bottom: 15px;
+}
+
+.btn-more {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-more:hover {
+    background-color: #555;
+    transition: background-color 0.3s;
+}
